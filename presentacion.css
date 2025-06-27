@@ -605,3 +605,52 @@ body, html {
 .logo-presupuesto {
   margin-top: 30px;
 }
+
+@media (max-width: 700px) {
+  .diapositivas-wrapper,
+  .diapositiva {
+    min-height: 100vh !important;
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow-y: auto !important;
+    box-sizing: border-box;
+  }
+  .contenido-simple,
+  .contenido-tarjetas {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+    width: 100vw !important;
+    box-sizing: border-box;
+  }
+  .arrow {
+    top: 50% !important;
+    bottom: unset !important;
+    transform: translateY(-50%) !important;
+    font-size: 2.2rem !important;
+    padding: 0.15em 0.32em !important;
+    background: #fff !important;
+    box-shadow: 0 1px 8px #8cb3de44 !important;
+  }
+  .arrow.left { left: 16px !important; right: unset !important; }
+  .arrow.right { right: 16px !important; left: unset !important; }
+}
+@media (max-width: 700px) {
+  .contenido-simple, .contenido-tarjetas {
+    padding-top: 32px !important; /* Puedes ajustar a 40px si quieres aún más espacio */
+  }
+  .titulo-componentes, 
+  .contenido-simple h2 {
+    margin-top: 16px !important; /* Extra margen para títulos */
+  }
+}
+.imagen-ejemplo {
+  transition: transform 0.3s cubic-bezier(.4,1.6,.4,1);
+}
+
+.imagen-ejemplo:hover {
+  transform: scale(1.07);
+  z-index: 2;
+}
