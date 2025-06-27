@@ -654,3 +654,20 @@ body, html {
   transform: scale(1.07);
   z-index: 2;
 }
+
+@media (max-width: 700px) {
+  .tarjeta-contenido {
+    width: 80vw !important;      /* Más angosta en mobile */
+    min-height: 120px !important;
+    padding: 0 0 12px 0 !important;
+  }
+  .tarjeta-img {
+    height: 70px !important;     /* Imagen más baja */
+  }
+  .tarjeta-contenido h3, 
+  .tarjeta-contenido p {
+    font-size: 1rem !important;  /* Texto más chico */
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+  }
+}
